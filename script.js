@@ -33,6 +33,7 @@ function resetSketch() {
         resetsqr.style.backgroundColor = 'white';
         rainbow = false;
     }
+    disengageRainbow();
 }
 
 const rainbowbutton = document.getElementById('rainbow');
