@@ -1,24 +1,45 @@
+body {
+    box-sizing: border-box;
+}
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
     height: 100vh;
     width: 100vw;
-    gap: 10px;
 }
 .sketchzone {
+    flex: 5;
     display: grid;
-    max-width: 50%;
-    max-height: 50%;
+    width: 60%;
+    height: 60%;
     grid-template-columns: repeat(100, 1fr);
     grid-template-rows: repeat(100, 1fr);
     border: 5px black solid;  
+    gap: 0;
+    padding: 0;
 }
 .squares {
-    background-color: blue;
-    height: .5vw;
-    width: .5vw;
+    background-color: white;
+    height: auto;
+    width: auto;
+    margin: 0;
 }
 .controls {
+    flex: 1;
     position: relative;
-    justify-self: flex-end;
-    align-self: flex-end;
     margin: 100px;
+}
+
+.header {
+    margin-top: 50px;
+    justify-self: center;
+    font-size: xx-large;
+    font-weight: 800;
+    flex: 1;
+}
+button {
+    font-size: x-large;
+    padding: 1em, 2em;
 }
