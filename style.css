@@ -1,0 +1,24 @@
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    gap: 10px;
+}
+.sketchzone {
+    display: grid;
+    max-width: 50%;
+    max-height: 50%;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    border: 5px black solid;  
+}
+.squares {
+    background-color: blue;
+    height: .5vw;
+    width: .5vw;
+}
+.controls {
+    position: relative;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin: 100px;
+}
