@@ -13,9 +13,17 @@
           <div class="header">ETCH THIS SKETCH</div>
           <div class="sketchzone"></div>
           <div class="controls">
+            <div class="dropdown">
+                <button class="dropbtn">Color</button>
+                <div class="dropdown-content">
+                    <button class="colorselector", id="red", onclick="changeColor('red')">Red</button>
+                    <button class="colorselector", id="blue", onclick="changeColor('blue')">Blue</button>
+                    <button class="colorselector", id="green", onclick="changeColor('green')">Green</button>
+                </div>
+              </div> 
               <button id="rainbow"></button>
               <button id="reset", onclick="resetSketch()">Reset Board</button>
-
+              
           </div>
     
       </div>

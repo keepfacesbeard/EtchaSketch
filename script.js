@@ -3,6 +3,13 @@ let color = "black"
 let rainbow = false;
 console.log(sketchzone)
 
+function changeColor(newcolor) {
+    color = newcolor;
+    let drpbtn = document.getElementsByClassName('dropbtn')[0];
+    drpbtn.style.backgroundColor = newcolor;
+}
+
+
 for (let i=1; i<=10000; i++) {
     let square = document.createElement('div');
     square.classList.add('squares');
@@ -12,7 +19,6 @@ for (let i=1; i<=10000; i++) {
 }
 
 let sqrs = document.querySelector('.sketchzone');
-
 sqrs.addEventListener('mouseover', function(event){
     
     if (event.target.classList.contains("squares")) {
