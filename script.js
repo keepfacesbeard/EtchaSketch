@@ -3,9 +3,9 @@ let color = "black"
 let rainbow = false;
 console.log(sketchzone)
 
+const drpbtn = document.getElementsByClassName('dropbtn')[0];
 function changeColor(newcolor) {
     color = newcolor;
-    let drpbtn = document.getElementsByClassName('dropbtn')[0];
     drpbtn.style.backgroundColor = newcolor;
 }
 
@@ -27,7 +27,9 @@ sqrs.addEventListener('mouseover', function(event){
             sqr.style.backgroundColor = `${color}`;
         }
         else if (rainbow == true) {
-            sqr.style.backgroundColor = multiColor();     
+            sqr.style.backgroundColor = multiColor();
+            drpbtn.style.backgroundColor = multiColor();
+            rainbowbutton.style.backgroundColor = multiColor();     
         }
     }
 });
@@ -57,6 +59,9 @@ function disengageRainbow() {
     rainbowbutton.textContent="Turn On Rainbow";
     rainbowbutton.removeEventListener('click', disengageRainbow);
     rainbowbutton.addEventListener('click', engageRainbow);
+    rainbowbutton.style.backgroundColor = '';
+    drpbtn.style.backgroundColor = '';
+
 }
 
 function multiColor(){
