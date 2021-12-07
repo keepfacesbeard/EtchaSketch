@@ -10,7 +10,7 @@ function changeColor(newcolor) {
 }
 
 
-for (let i=1; i<=10000; i++) {
+for (let i=1; i<=1000000; i++) {
     let square = document.createElement('div');
     square.classList.add('squares');
     square.classList.add(`square${i}`);
